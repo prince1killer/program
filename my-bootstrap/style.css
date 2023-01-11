@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&family=Passions+Conflict&display=swap');
+:root{
+    --logo-family: 'Passions Conflict', cursive;
+    --big-font: 'Pacifico', cursive;
+    --normal-font: 'Dancing Script', cursive;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/* =================================common=================================== */
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 60px;
+}
+.title>h1{
+    font-size: 55px;
+    font-weight: 600;
+    text-shadow: 0 2px 1px red;
+    font-family: var(--normal-font);
+
+}
+.service{
+    padding: 2rem;
+}
+h2,h3,p,a{
+    font-family: serif;
+}
+/* ========================================Header================================= */
+#header{
+    color: white;
+    background-color: #e74c3c;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+#menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#menu li{
+    display: inline-block;
+}
+#menu li a{
+    text-decoration: none;
+    color: white;
+    padding: 15px 10px;
+    display: block;
+    font-weight: 500;
+    font-size: 20px;
+}
+#menu>li:hover{
+    text-shadow: 6px 4px 5px black;
+    background-color: #c0392b;
+}
+#logo{
+    text-shadow: 3px 1px 1px white;
+    font-family: var(--big-font);
+    font-weight: 600;
+    color: black;
+}
+
+/* =======================================================Hone==================================== */
+.banner{
+    background:url(img/seen.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+}
+.banner-title{
+    margin-top: 30%;
+}
+.banner-title h1{
+    background-color: rgba(255,255,255,.8);
+    display: inline-block;
+    padding: 10px;
+    margin: 0%
+}
+
+.banner-title p.lead{
+    background-color: rgba(231, 76, 60,.7);
+    color: white;
+    padding: 10px;
+}
+/* ===============================================About================================== */
+#about{
+    height: 100%;
+    padding: .5rem;
+}
+.svg-img{
+    width: 100px;
+    height: 100px;
+}
+.about-text{
+    padding: 10%;
+}
+.about-ani{
+    margin: 8% 0%;
+}
+/* ================================================Gallery==================================== */
+#gallery{
+    height: 100%;
+}
+.service-box{
+    text-align: center;
+    padding: 3rem;
+}
+.service-box>i{
+    color: #e74c3c;
+    font-size: 70px;
+    font-weight: 700;
+    text-shadow: 0 3px 4px black;
+}
+/* .service-box>h3 */
+/* ============================================Testominal================================================ */
+.testominal{
+    background-image: url("img/phone.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 350px;
+    position: relative;
+}
+.testominal::before{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0,.7);
+}
+/* .testominal-cover{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;    
+    z-index: 0;
+} */
+.testominal>h1{
+    color: white;
+}
+/* .testominal>h1::before{
+    position: absolute;
+    bottom: -2px;
+    width: 50px;
+    height: 2px;
+    color: #e74c3c;
+    content: " ";
+    text-align: center;
+} */
+.testominal-title, .testominal-row{
+    /* z-index: 2; */
+    position: sticky;
+}
+.testominal-content{
+    /* display: flex; */
+    padding: 5%;
+}
+.testominal-content>p{
+    color: white;
+}
+.testominal-content>img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.testominal-content>h6{
+    color: white;
+}
+/* ===================================================Team===================================== */
+.team-content{
+
+    align-items: center;
+    text-align: center;
+}
+.team-content>img{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    display: inline-block;
+    /* width: 100%; */
+    align-items: center;
+}
+.team-content>a,.team-content>h3>a{
+    text-decoration: none;
+    color: black;
+}
+/* =======================================Product=========================================== */
+.box>img{
+    width: 200px;
+    height: 200px;
+}
+.box1{
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+}
+/* =========================================Footer========================================= */
+.footer{
+    background-color: rgb(0, 40, 150);
+}
+.footer h3,.footer p,.footer i{
+    color: white;
+}
+.copy{
+    color: white;
+}
